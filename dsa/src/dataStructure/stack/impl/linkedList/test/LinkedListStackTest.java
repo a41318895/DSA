@@ -6,7 +6,7 @@ public class LinkedListStackTest {
 
     public static void main(String[] args) {
 
-        // Test push(), extend() methods & init constructor
+        // Test push(), extend(), shrink() methods & init constructor
         LinkedListStack<String> names = new LinkedListStack<>() ;
         System.out.println("Stack Capacity: " + names.capacity()) ;
         System.out.println("Stack Size: " + names.size()) ;
@@ -25,6 +25,10 @@ public class LinkedListStackTest {
 
         System.out.println("Stack Capacity When Added the 7th Data: " + names.capacity()) ;
         System.out.println("Stack Size When Added the 7th Data: " + names.size()) ;
+
+        var temp = names.pop() ;
+        System.out.println("Stack Capacity When Removed 1 Data: " + names.capacity()) ;
+        System.out.println("Stack Size When Removed 1 Data: " + names.size()) ;
 
 
         System.out.println() ;
