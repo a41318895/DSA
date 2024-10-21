@@ -98,9 +98,8 @@ public class LinkedListStack<D> implements MyStack<D> {
 
     private void shrink() {
 
-        if(stackCapacity <= ACTUAL_MIN_CAPACITY) return ;    // Avoid shrinking to less than minimum.
-
         int newStackCapacity = Math.max(ACTUAL_MIN_CAPACITY, stackCapacity / 2) ;
+
         System.out.println("Shrinking the capacity of stack from " + this.stackCapacity + " to " + newStackCapacity) ;
 
         this.stackCapacity = newStackCapacity ;
